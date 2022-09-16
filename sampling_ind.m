@@ -42,7 +42,7 @@ function [W1,Wp,Clist_GT, case_mtx, ctrl_mtx, threshold_GT] = sampling_ind(ctrl_
             [~,Clist_GT] = sort(pm);
             
             %% find a good cut
-            threshold_vec = logspace(-5,0,100);
+            threshold_vec = logspace(-5,-1,100);
             f1score_vec = zeros(length(threshold_vec),1);
             for i = 1:length(threshold_vec)
                 target = ones(1,edge_num);

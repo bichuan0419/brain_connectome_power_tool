@@ -30,7 +30,7 @@ function [T0_vec, score_max] = custom_statistic(Wp, Clist, CID, r_vec, weights)
                             cur_pvec = squareform(W_cluster);
                             cur_pvec(cur_pvec < -log(r_vec(j))) = 0;
                             cur_pvec(cur_pvec >= -log(r_vec(j))) = 1;
-                            score(j) = sum(cur_pvec)/(length(W_cluster));
+                            score(j) = sum(cur_pvec)/(length(W_cluster) * (length(W_cluster)-1));
                         end
 
                     end
