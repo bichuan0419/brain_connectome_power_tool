@@ -1,4 +1,4 @@
-function P_value = permutation_test(ctrl_mtx, case_mtx, Wp, CID, Clist, M, r_vec, weights, func,threshold_GT)
+function P_value = permutation_test(ctrl_mtx, case_mtx, Wp, CID, Clist, M, func,threshold_GT)
 
 
             % edge_density = @(C) sum(sum(C))/(size(C,1)*(size(C,1)-1));
@@ -10,7 +10,7 @@ function P_value = permutation_test(ctrl_mtx, case_mtx, Wp, CID, Clist, M, r_vec
             % Wp=res_summary.Wp;
             Wt_orig = [ctrl_mtx;case_mtx];
             
-            T_orig =  custom_statistic(Wp, Clist, CID, r_vec, weights);
+            T_orig =  custom_statistic(Wp, Clist, CID, threshold_GT);
 
 
             T_vec = zeros(M,1);
@@ -23,7 +23,7 @@ function P_value = permutation_test(ctrl_mtx, case_mtx, Wp, CID, Clist, M, r_vec
 
                 Wp_temp=squareform(-log(ptemp));
                 [~, Clist_temp, CID_temp] = greedy(Wp_temp, func,threshold_GT);
-                [~,T_vec(m)] = custom_statistic(Wp_temp, Clist_temp, CID_temp, r_vec, weights);
+                [~,T_vec(m)] = custom_statistic(Wp_temp, Clist_temp, CID_temp, threshold_GT);
 
             end
 

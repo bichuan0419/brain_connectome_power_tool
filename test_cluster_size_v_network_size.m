@@ -10,19 +10,25 @@ sigma0 = 1;
 % Covariate-related edges
 sigma1 =1;
 % difference between the mean values mu1 - mu0  of the two distributions
-theta =0.3;
+theta =0.25;
 % proportion of significant edges of the covariate-related subnetwork
-rho_in = 0.6;
+rho_in = 0.7;
 % proportion of significant edges of the outside the covariate-related subnetwork
 rho_out = 0.01;
 % number of nodes in the covariate-related subnetworks
 cluster_size = 30;
 FWER_threshold = 0.05;
 % Number of repetitions
-M_rep = 100;
+M_rep = 200;
 % Number of permutation tests in one repetition
 M_perm = 100;
 % Size of the entire network
-N = 220;
+N = 100;
 
-power = covariate_net_test(n1, n2, N, sigma0, sigma1, theta, rho_in, rho_out, cluster_size, FWER_threshold, M_rep, M_perm);
+% cluster_N_network = [18 60; 24 80; 30 100; 36 120; 42 140];
+
+power_list = zeros(size(cluster_N_network,1),1);
+for i = 1:length(power_list)
+power = covariate_net_test(n1, n2, cluster_N_network(i,2), sigma0, sigma1, theta, rho_in, rho_out, cluster_N_network(i,1), FWER_threshold, M_rep, M_perm);
+power_list(i) = power;
+end
