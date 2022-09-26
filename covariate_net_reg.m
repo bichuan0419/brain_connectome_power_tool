@@ -11,7 +11,7 @@ parfor m = 1:M_rep
     % filter by Jaccard index
     J = length(intersect(Clist_GT(1:cluster_size),Clist_greedy(1:CID_greedy)))/length(union(Clist_GT(1:cluster_size),Clist_greedy(1:CID_greedy)));
     if J >= 0.5
-         P_value = permutation_test_reg(Wm, X, Wp, CID, Clist, M_perm, func,threshold_GT);
+         P_value = permutation_test_reg(Wm, X, Wp, CID_greedy, Clist_greedy, M_perm, func,threshold_GT);
         power_list(m) = double(P_value<= FWER_threshold);
         %         disp(double(P_value<= FWER_threshold))
     else
