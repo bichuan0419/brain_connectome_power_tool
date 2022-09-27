@@ -10,7 +10,7 @@ parfor m = 1:M_rep
     [W_greedy, Clist_greedy, CID_greedy] = greedy(Wp, func,threshold_GT);
     % filter by Jaccard index
     J = length(intersect(Clist_GT(1:cluster_size),Clist_greedy(1:CID_greedy)))/length(union(Clist_GT(1:cluster_size),Clist_greedy(1:CID_greedy)));
-    if J >= 0.5
+    if J >= 0.7
         P_value = permutation_test(ctrl_mtx, case_mtx, Wp, CID_greedy, Clist_greedy, M_perm, func,threshold_GT);
         power_list(m) = double(P_value<= FWER_threshold);
 %         disp(double(P_value<= FWER_threshold))

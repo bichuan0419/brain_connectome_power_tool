@@ -1,0 +1,41 @@
+function [W1,Wp,Clist_GT, case_mtx, ctrl_mtx] = sampling_ind(ctrl_num, case_num, N, sigma0, sigma1, theta, cluster_size, rho_in, rho_out)
+            % a simple data generator
+            % Chuan
+
+            % output: W1 ground truth
+            %         Wp permuted data
+
+            % Load parameters
+            Z = pick_idx(cluster_size, N);
+
+            edge_num = N*(N-1)/2;
+            all_idx = 1:edge_num;
+            case_idx = Z;
+            % non-covariate-related edges
+            ctrl_idx = all_idx;
+            ctrl_idx(case_idx) = [];
+            % add non central dist. to the case
+            d_out = floor(rho_out * length(ctrl_idx));
+            d_in = floor((1-rho_in) * length(case_idx));
+            d_out_idx = randsample(1:length(ctrl_idx),d_out,false);
+            d_out_orig = ctrl_idx(d_out_idx);
+            ctrl_idx(d_out_idx) = [];
+            d_in_idx = randsample(1:length(case_idx),d_in,false);
+            d_in_orig = case_idx(d_in_idx);
+            case_idx(d_in_idx) = [];
+
+            case_mtx = zeros(case_num, edge_num);
+            case_mtx(:,case_idx) = randn(case_num, length(case_idx))*sigma1 + theta;
+            case_mtx(:,d_out_orig) = randn(case_num, d_out)*sigma1 + theta;
+            case_mtx(:,ctrl_idx) = randn(case_num, length(ctrl_idx))*sigma0;
+            case_mtx(:,d_in_orig) = randn(case_num, d_in)*sigma0;
+            ctrl_mtx = randn(ctrl_num, edge_num)*sigma0;
+
+            pm = randperm(N);
+            [~,p_vec]=ttest2(case_mtx,ctrl_mtx);
+            W1=squareform(-log(p_vec));
+            Wp = W1(pm,pm);
+            % return ground truth Clist
+            [~,Clist_GT] = sort(pm);
+
+        end
