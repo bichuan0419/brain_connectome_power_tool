@@ -1,14 +1,43 @@
 function power = covariate_net_ttest(n1, n2, N, sigma0, ...
     Cohensd, rho_in, rho_out, cluster_size, Covariance,...
-    FWER_threshold, M_rep, M_perm, Reliability)
+    FWER_threshold, M_rep, M_perm, Reliability, Useparallel)
+
+%COVARIATE_NET_TTEST Estimates power of data-driven network anlaysis based
+% on a two-sample t-test.
+%
+%   This function estimates the statistical power of detecting a network
+%   change using a two-sample t-test on whole-brain connectome data. It
+%   uses a permutation testing framework to assess significance and applies
+%   a greedy algorithm for network identification.
+%
+%   Inputs:
+%       n1             - Number of subjects in group A.
+%       n2             - Number of subjects in group B.
+%       N              - Total number of nodes in the network.
+%       sigma0         - Standard deviation of the edges.
+%       Cohensd        - Effect size (Cohen's d).
+%       rho_in         - Proportion of significant edges within the
+%                        covariate-related subnetwork.
+%       rho_out        - Proportion of significant edges outside the
+%                        covariate-related subnetwork.
+%       cluster_size   - Size of the clusters in the network.
+%       Covariance     - Covariance matrix for the network nodes.
+%       FWER_threshold - Family-wise error rate threshold for significance.
+%       M_rep          - Number of repetitions for the simulation.
+%       M_perm         - Number of permutations for the permutation test.
+%       Reliability    - Measure of test-retest reliability.
+%
+%   Output:
+%       power          - Estimated statistical power for the network test.
+
 
 % Setup the Total Iterations and Waitbar:
 wb = waitbar(0, 'Please wait...');
 
 % Check for Parallel Computing Toolbox:
-hasParallelToolbox = license('test', 'Parallel_Computing_Toolbox') && ~isempty(ver('parallel'));
+hasParallelToolbox = license('test','Distrib_Computing_Toolbox');
 
-if hasParallelToolbox
+if hasParallelToolbox && Useparallel
     % Check for Parallel Pool:
     if isempty(gcp('nocreate'))
         % Get the default cluster profile
@@ -32,11 +61,15 @@ end
 
 power_list = zeros(M_rep,1);
 
-if hasParallelToolbox
+if hasParallelToolbox && Useparallel
     
     parfor m = 1:M_rep
         theta = Cohensd*sigma0;
-        L = chol(Covariance);
+        if ~isempty(Covariance)
+            L = chol(Covariance);
+        else
+            L = [];
+        end
         [W1,Wp, Clist_GT, case_mtx, ctrl_mtx, threshold_GT] = sampling_ind_ttest(n1, n2, N, sigma0, theta, cluster_size, rho_in, rho_out, L, Reliability);
         % greedy
         func = @(C) sum(sum(C))/size(C,1);
