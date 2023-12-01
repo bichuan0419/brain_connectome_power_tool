@@ -18,10 +18,12 @@ BNPower is developed in MATLAB and offers multiple usage options depending on wh
 Download and run the Webinstaller file from BNPower/for_redistribution/MyAppInstaller_web.exe. This will install the MATLAB Runtime required to run BNPower.
 After installing the MATLAB Runtime, use BNPower/for_redistribution_files_only/BNPower.exe to launch the application.
 2. For Users With MATLAB Installed:
-You can directly run BNPower/for_redistribution_files_only/BNPower.exe.
-3. Alternatively, download and unzip the complete BNPower package and use BNPower.mlapp within MATLAB.
+You can directly run BNPower/for_redistribution_files_only/BNPower.exe. Alternatively, download and unzip the complete BNPower package and use BNPower.mlapp within MATLAB.
 
-User can simply click "Run" button for power calculation. A "Show Example Network" button is available for users to inspect the sample inference matrix. A concise video tutorial for BNPower is available at https://youtu.be/Hd1splkxrhU
+### Operating BNPower
+* To perform a power calculation, simply click the "Run" button in the application.
+* Use the "Show Example Network" button to view a sample inference matrix, which can help familiarize you with the tool’s functionality.
+* A concise video tutorial for BNPower is available at this YouTube link for additional guidance.
 
 ## Inputs
 There are 3 main categories of the input variables: 1. the input that governs the graph structure; 2. The input that are requried for classical univariate power calculation (e.g., sample size, effect size, alpha level); 3. The inputs that affects power in the simulation-based power calculation process (e.g., number of datasets used, number of permutation test for each dataset).
