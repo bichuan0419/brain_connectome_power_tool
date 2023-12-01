@@ -8,8 +8,8 @@ BNPower is equipped with two distinct tabs catering to different research design
 1. T-test Tab: Ideal for studies requiring a two-sample test, such as case versus control comparisons. This tab facilitates the comparison of two distinct groups within your connectome data.
 2. Regression Tab: Suited for studies where the primary variable of interest is continuous, like age. This tab supports the examination of linear relationships between continuous variables and network features in connectome data.
 
-<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/d87fd1e2-8898-4fa5-b686-33f753dfbc77" width="500">
-<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/17034740-c9cd-4dbd-855d-79bbe0dee084" width="500">
+<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/d87fd1e2-8898-4fa5-b686-33f753dfbc77" width="400">
+<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/17034740-c9cd-4dbd-855d-79bbe0dee084" width="400">
 
 
 ## How to use the tool
