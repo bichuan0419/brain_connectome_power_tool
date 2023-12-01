@@ -1,10 +1,14 @@
 # BNPower - a power calculation tool for data-driven network analysis for whole-brain connectome data
-This code accompanies the paper "BNPower - a power calculation tool for data-driven network analysis for whole-brain connectome data" on XXX journal
-## Description of BNPower
-There are two tabs within BNPower, researchers can use "T-test" in the study designs where a two-sample test (case vs control) is needed, users can also use "Regression" tab for the studies where the predictor-of-interest is a continuous variable (e.g. age).
+
+## Overview
+BNPower is a specialized tool designed for power calculations in data-driven network analysis of whole-brain connectome data. This tool accompanies our paper, "BNPower - A Power Calculation Tool for Data-Driven Network Analysis in Whole-Brain Connectome Data," published in [XXX journal].
+
+## Features of BNPower
+BNPower is equipped with two distinct tabs catering to different research designs:
+1. T-test Tab: Ideal for studies requiring a two-sample test, such as case versus control comparisons. This tab facilitates the comparison of two distinct groups within your connectome data.
+2. Regression Tab: Suited for studies where the primary variable of interest is continuous, like age. This tab supports the examination of linear relationships between continuous variables and network features in connectome data.
 
 ![Fig4a](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/d87fd1e2-8898-4fa5-b686-33f753dfbc77)
-
 ![Fig4b](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/17034740-c9cd-4dbd-855d-79bbe0dee084)
 
 ## How to use the tool
