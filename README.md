@@ -40,17 +40,23 @@ BNPower requires three main categories of input variables:
    - Number of Datasets Used: The quantity of datasets utilized in the simulation process.
    - Number of Permutation Tests per Dataset: The frequency of permutation tests conducted for each dataset to assess the power accurately.
 
-### A summary of the inputs can be found below:
+### A summary of the inputs:
 <img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/f75f972b-a703-4636-97a2-6383ecc59fcc" width="600">
 
-### The pipeline of BNPower is shown here:
+### The pipeline of BNPower:
 <img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/5a2f86c1-f2e4-4628-bb2f-b42b26268508" width="600">
 
-### The network-level statistical analysis procedure can be found here
+### The network-level statistical analysis procedure:
 <img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/abfcc4a8-045e-4c3d-8c15-808b612b9817" width="600">
 
-## Outputs
-Two outputs will be recorded for BNPower: The network-level statistical power with 95% confidence interval (as indicated in the bolded, red textfield), and the time elapsed to calculate the power.
+## Outputs of BNPower
+
+BNPower provides two primary outputs:
+
+1. **Network-Level Statistical Power with 95% Confidence Interval**: This is displayed in a bolded, red text field within the application. It indicates the statistical power of your network analysis along with its 95% confidence interval, offering a clear understanding of the robustness of your results.
+
+2. **Time Elapsed for Power Calculation**: The application also records and displays the time taken to calculate the power, providing insight into the efficiency of the analysis process.
+
 
 
 ## Compatibility
