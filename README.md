@@ -12,11 +12,14 @@ BNPower is equipped with two distinct tabs catering to different research design
 <img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/17034740-c9cd-4dbd-855d-79bbe0dee084" width="400">
 
 
-## How to use the tool
-BNPower is developed and compiled in MATLAB, so to use the tool, users can either
-1. Use the Webinstaller file in BNPower/for_redistribution/MyAppInstaller_web.exe to install Matlab Runtime, if the user does not have Matlab installed. Then use /BNPower/for_redistribution_files_only/BNPower.exe.
-2. If the user has Matlab installed, he/she can use /BNPower/for_redistribution_files_only/BNPower.exe or
-3. If the user has Matlab installed, he/she can use BNPower.mlapp after downloading/unzipping the complete package on Matlab.
+## How to use the BNPower
+BNPower is developed in MATLAB and offers multiple usage options depending on whether MATLAB is installed on your system. Follow these steps to get started:
+1. For Users Without MATLAB:
+Download and run the Webinstaller file from BNPower/for_redistribution/MyAppInstaller_web.exe. This will install the MATLAB Runtime required to run BNPower.
+After installing the MATLAB Runtime, use BNPower/for_redistribution_files_only/BNPower.exe to launch the application.
+2. For Users With MATLAB Installed:
+You can directly run BNPower/for_redistribution_files_only/BNPower.exe.
+3. Alternatively, download and unzip the complete BNPower package and use BNPower.mlapp within MATLAB.
 
 User can simply click "Run" button for power calculation. A "Show Example Network" button is available for users to inspect the sample inference matrix. A concise video tutorial for BNPower is available at https://youtu.be/Hd1splkxrhU
 
