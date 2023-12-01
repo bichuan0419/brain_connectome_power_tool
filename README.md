@@ -9,7 +9,7 @@ BNPower is equipped with two distinct tabs catering to different research design
 2. Regression Tab: Suited for studies where the primary variable of interest is continuous, like age. This tab supports the examination of linear relationships between continuous variables and network features in connectome data.
 
 <img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/d87fd1e2-8898-4fa5-b686-33f753dfbc77" width="400">
-<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/17034740-c9cd-4dbd-855d-79bbe0dee084" width="400">
+<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/1fa5f0f1-de04-4b3f-84cb-c86cf991e089" width="400">
 
 
 ## How to use the BNPower
@@ -67,6 +67,9 @@ The software is compatible with MATLAB 2019b and newer versions. The required to
 The estimated runtime for BNpower varies depending on the specific input settings. We have compiled a table for the expected runtime of BNPower using a Windows PC equipped with a 13th Gen Intel(R) Core(TM) i5-1340P processor (1.90 GHz) and 32.0 GB RAM (31.6 GB usable). The system operated on a 64-bit Windows OS with an x64-based processor. 
 
 <img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/ac47b554-a349-40f5-b695-6508c13dbbdc" width="600">
+
+## For the figures that are used in the manuscript and Supplementary material
+
 
 
 ## License
