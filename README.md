@@ -27,11 +27,10 @@ There are 3 main categories of the input variables: 1. the input that governs th
 <img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/5a2f86c1-f2e4-4628-bb2f-b42b26268508" width="600">
 
 ### A summary of the inputs can be found below:
-![Fig3b](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/f75f972b-a703-4636-97a2-6383ecc59fcc)
-
+<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/f75f972b-a703-4636-97a2-6383ecc59fcc" width="600">
 
 ### The network-level statistical analysis procedure can be found here
-![Fig2](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/abfcc4a8-045e-4c3d-8c15-808b612b9817)
+<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/abfcc4a8-045e-4c3d-8c15-808b612b9817" width="600">
 
 ## Outputs
 Two outputs will be recorded for BNPower: The network-level statistical power with 95% confidence interval (as indicated in the bolded, red textfield), and the time elapsed to calculate the power.
@@ -39,12 +38,12 @@ Two outputs will be recorded for BNPower: The network-level statistical power wi
 
 ## Compatibility
 The software is compatible with MATLAB 2019b and newer versions. The required toolboxes are shown below:
-![Required toolboxes](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/f490674e-d8ff-4c38-b87c-9d95a86f1d96)
+<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/f490674e-d8ff-4c38-b87c-9d95a86f1d96" width="600">
 
 ## Runtime
 The estimated runtime for BNpower varies depending on the specific input settings. We have compiled a table for the expected runtime of BNPower using a Windows PC equipped with a 13th Gen Intel(R) Core(TM) i5-1340P processor (1.90 GHz) and 32.0 GB RAM (31.6 GB usable). The system operated on a 64-bit Windows OS with an x64-based processor. 
 
-![image](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/ac47b554-a349-40f5-b695-6508c13dbbdc)
+<img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/ac47b554-a349-40f5-b695-6508c13dbbdc" width="600">
 
 
 ## License
