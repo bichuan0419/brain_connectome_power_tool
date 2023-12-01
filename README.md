@@ -84,7 +84,7 @@ The estimated runtime for BNpower varies depending on the specific input setting
 * Figure 3 is generated according to \figures_and_manuscript_examples\UKB_example\Real_world_example_UKB_Younger_vs_Older\UKB_young_vs_old.m
 * Figure 4 is generated according to \figures_and_manuscript_examples\UKB_example\Real_world_example_UKB_Younger_vs_Older\UKB_young_vs_old.m
 * Comparison between BWAS and BNPower can be found at \figures_and_manuscript_examples\UKB_example\Sample_size_calculation_BNPower_vs_BWAS\BNPower_vs_BWAS.m
-* Sample covariance and reliability matrices can be found in the \data folder
+* Sample covariance and reliability matrices can be found in the \data folder, which are generated according to Covariance_Reliability_gen.m function
 * Comparison between NBS and BNPower can be found at \figures_and_manuscript_examples\NBS_vs_BNPower\BNPower_vs_NBS_power_calculation.m
 
 ## License
