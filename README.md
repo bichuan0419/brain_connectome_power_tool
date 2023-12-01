@@ -71,5 +71,5 @@ The estimated runtime for BNpower varies depending on the specific input setting
 
 ## License
 
-BNPower is developed under the GNU General Public License. This open-source license ensures that users have the freedom to run, study, share, and modify the software. For more details, please refer to the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+BNPower is licensed under the GNU General Public License. For more details, see the [LICENSE](LICENSE) file in this repository.
 
