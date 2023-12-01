@@ -15,7 +15,7 @@ BNPower is developed and compiled in MATLAB, so to use the tool, users can eithe
 
 User can simply click "Run" button for power calculation. A "Show Example Network" button is available for users to inspect the sample inference matrix. A concise video tutorial for BNPower is available at https://youtu.be/Hd1splkxrhU
 
-## INPUTS
+## Inputs
 There are 3 main categories of the input variables: 1. the input that governs the graph structure; 2. The input that are requried for classical univariate power calculation (e.g., sample size, effect size, alpha level); 3. The inputs that affects power in the simulation-based power calculation process (e.g., number of datasets used, number of permutation test for each dataset).
 
 ### The pipeline of BNPower is shown here:
@@ -27,6 +27,9 @@ There are 3 main categories of the input variables: 1. the input that governs th
 
 ### The network-level statistical analysis procedure can be found here
 ![Fig2](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/abfcc4a8-045e-4c3d-8c15-808b612b9817)
+
+## Outputs
+Two outputs will be recorded for BNPower: The network-level statistical power with 95% confidence interval, and the time elapsed to calculate the power.
 
 
 ## Compatibility
