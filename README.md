@@ -12,7 +12,7 @@ There are two tabs within BNPower, researchers can use "T-test" in the study des
 There are 3 main categories of the input variables: 1. the input that governs the graph structure; 2. The input that are requried for classical univariate power calculation (e.g., sample size, effect size, alpha level); 3. The inputs that affects power in the simulation-based power calculation process (e.g., number of datasets used, number of permutation test for each dataset).
 
 ### The pipeline of BNPower is shown here:
-![Fig3a](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/ecf57fff-6fc5-44bd-a2d3-d63623d9fd4c)
+![Fig3a](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/5a2f86c1-f2e4-4628-bb2f-b42b26268508)
 
 ### A summary of the inputs can be found below:
 ![Fig3b](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/f75f972b-a703-4636-97a2-6383ecc59fcc)
