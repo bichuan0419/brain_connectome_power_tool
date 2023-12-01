@@ -29,7 +29,7 @@ There are 3 main categories of the input variables: 1. the input that governs th
 ![Fig2](https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/abfcc4a8-045e-4c3d-8c15-808b612b9817)
 
 ## Outputs
-Two outputs will be recorded for BNPower: The network-level statistical power with 95% confidence interval, and the time elapsed to calculate the power.
+Two outputs will be recorded for BNPower: The network-level statistical power with 95% confidence interval (as indicated in the bolded, red textfield), and the time elapsed to calculate the power.
 
 
 ## Compatibility
