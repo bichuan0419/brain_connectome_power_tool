@@ -69,8 +69,23 @@ The estimated runtime for BNpower varies depending on the specific input setting
 <img src="https://github.com/bichuan0419/brain_connectome_power_tool/assets/43563121/ac47b554-a349-40f5-b695-6508c13dbbdc" width="600">
 
 ## For the figures that are used in the manuscript and Supplementary material
+### main manuscript
+* Figure 1 is generated according to \figures_and_manuscript_examples\paper_figures\Fig1\FC_Gscore_final.m
+* Figure 5a is generated according to \power_curves\two_sample_test\ttest_power_vs_ES_rho1.m
+* Figure 5b is generated according to \power_curves\two_sample_test\ttest_power_vs_ES_cluster_size.m
+* Figure 5d is generated according to \power_curves\two_sample_test\ttest_power_vs_SS_rho1.m
+* Figure 5d is generated according to \power_curves\two_sample_test\ttest_power_vs_SS_cluster_size.m
 
-
+### Supplementary Material
+* Figure 1a is generated according to \power_curves\regression\regression_power_vs_ES_rho1.m
+* Figure 1b is generated according to \power_curves\regression\regression_power_vs_ES_cluster_size.m
+* Figure 1c is generated according to \power_curves\regression\regression_power_vs_SS_rho1.m
+* Figure 1d is generated according to \power_curves\regression\regression_power_vs_SS_cluster_size.m
+* Figure 3 is generated according to \figures_and_manuscript_examples\UKB_example\Real_world_example_UKB_Younger_vs_Older\UKB_young_vs_old.m
+* Figure 4 is generated according to \figures_and_manuscript_examples\UKB_example\Real_world_example_UKB_Younger_vs_Older\UKB_young_vs_old.m
+* Comparison between BWAS and BNPower can be found at \figures_and_manuscript_examples\UKB_example\Sample_size_calculation_BNPower_vs_BWAS\BNPower_vs_BWAS.m
+* Sample covariance and reliability matrices can be found in the \data folder
+* Comparison between NBS and BNPower can be found at \figures_and_manuscript_examples\NBS_vs_BNPower\BNPower_vs_NBS_power_calculation.m
 
 ## License
 
